@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "TL";
+}
+<hr/>
+<div class="alert alert-success" role="alert" id="divAlertOK" hidden="hidden">
+
+</div>
+
+<div class="alert alert-danger" role="alert" id="divAlertNOK" hidden="hidden">
+
+</div>
+
+<h2>Tarefas</h2>
+<h4>Olá, aqui você poderá gerenciar todas as suas tarefas.</h4>
+<p>O que você deseja fazer?</p>
+
+<button class="btn btn-default" data-toggle="modal" data-target="#modalCadastroTarefa" type="button">Cadastrar Tarefas</button>&nbsp;
+<button class="btn btn-default" id="btnListarTarefas">Listar Tarefas</button>
+<button class="btn btn-default" id="btnTestarConexao">Testar Conexão</button>
+
+<div id="taskList" hidden>
+    <div id="taskListContent">
+        <hr/>
+        <table id="tblListContent" class="table table-responsive table-striped table-hover">
+            @*<tr>
+                <th>ID</th>
+                <th>Titulo</th>
+                <th>Descricao</th>
+                <th>STATUS</th>
+                <th>Data Criação</th>
+                <th>Data Alteração</th>
+                <th>Data Exclusão</th>
+                <th></th>
+                <th></th>
+            </tr>*@
+
+        </table>
+
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modalCadastroTarefa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cadastrar Tarefa</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="/Task/InserirTarefa">
+                    <!--FORMULÁRIO REPSONSÁVEL POR CONSTRUIR OS DADOS QUE SERÃO ENVIADOS AO BANCO-->
+                    <label>Titulo: </label><br />
+                    <input type="text" class="form-control" id="titulo" name="titulo" required />
+                    <br />
+                    <label>Descrição: </label>
+                    <textarea class="form-control" id="descricao" name="descricao" required></textarea>
+                    <br />
+                    <input type="submit" id="btnInserirTarefa" value="Enviar" class="btn btn-success" />
+                    @*<button type="button" id="btnInserirTarefa"  class="btn btn-success">Enviar</button>*@
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                <!--<button type="button" class="btn btn-primary">Salvar</button>-->
+            </div>
+        </div>
+    </div>
+</div>
+
+

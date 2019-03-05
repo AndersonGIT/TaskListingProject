@@ -1,0 +1,85 @@
+﻿@model AndersonDiegoTaskList.Models.TarefaModel
+
+@{
+    ViewBag.Title = "Excluir";
+}
+
+<h2>Excluir</h2>
+
+@if (ViewBag.Resposta == "OK")
+{
+    <div class="alert alert-success" role="alert" id="divAlertOK">
+        <b>Sucesso.</b>
+        <p>Tarefa excluida com sucesso.</p>
+        <script>
+            setTimeout(function () { }, 2500);
+        </script>
+    </div>
+}
+else
+{
+    <div class="alert alert-danger" role="alert" id="divAlertNOK">
+        <b>Erro.</b>
+        <p>Problemas ao excluir a tarefa.</p>
+        <script>
+            setTimeout(function () { }, 2500);
+        </script>
+    </div>
+}@*<div>
+        <h4>TarefaModel</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Titulo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Descricao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Descricao)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataCriacao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataCriacao)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataAtualizacao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataAtualizacao)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataExclusao)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataExclusao)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

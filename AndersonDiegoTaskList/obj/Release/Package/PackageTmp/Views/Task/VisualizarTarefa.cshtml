@@ -1,0 +1,83 @@
+﻿@model AndersonDiegoTaskList.Models.TarefaModel
+
+@{
+    ViewBag.Title = "VisualizarTarefa";
+}
+
+<h2>VisualizarTarefa</h2>
+
+<div>
+    <h4>TarefaModel</h4>
+    <hr />
+    <input type="hidden" id="txtId" value="@Model.Id" />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataCriacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataCriacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataAtualizacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataAtualizacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DataExclusao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DataExclusao)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @if (Model.Status != 'F')
+    {
+        @Html.ActionLink("Editar Tarefa |", "EditarTarefa", new { pId = Model.Id })
+    }   
+    @Html.ActionLink("Voltar para Lista", "Index")
+    @if(Model.Status != 'F')
+    {
+        <button class="btn btn-primary" id="btnConcluirTarefa">Concluir</button>
+    }
+</p>
+
+
+<div class="alert alert-success" role="alert" id="divAlertOK" hidden="hidden">
+
+</div>
+
+<div class="alert alert-danger" role="alert" id="divAlertNOK" hidden="hidden">
+
+</div>

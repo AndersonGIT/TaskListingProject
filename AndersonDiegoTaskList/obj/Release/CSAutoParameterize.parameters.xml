@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="TaskListingDataCon-Web.config Connection String" description="TaskListingDataCon A Cadeia de Conexão usada em web.config pelo aplicativo para acessar o banco de dados." defaultValue="Server=tcp:soupdataserver.database.windows.net,1433;Initial Catalog=mySoupDataBase;Persist Security Info=False;User ID=ssistersentry;Password=LionsPass2018;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\ANDERSON\\source\\repos\\AndersonDiegoTaskList\\AndersonDiegoTaskList\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='TaskListingDataCon']/@connectionString" />
+  </parameter>
+</parameters>

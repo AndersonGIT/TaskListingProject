@@ -1,0 +1,9 @@
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\bin\Debug\netstandard2.0\AndersonDiegoDataLibrary.deps.json
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\bin\Debug\netstandard2.0\AndersonDiegoDataLibrary.dll
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\bin\Debug\netstandard2.0\AndersonDiegoDataLibrary.pdb
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.csprojAssemblyReference.cache
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.csproj.CoreCompileInputs.cache
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.AssemblyInfoInputs.cache
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.AssemblyInfo.cs
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.dll
+C:\Users\ANDERSON\source\repos\AndersonDiegoTaskList\AndersonDiegoDataLibrary\obj\Debug\netstandard2.0\AndersonDiegoDataLibrary.pdb
